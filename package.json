@@ -1,0 +1,24 @@
+{
+  "name": "sample_mern_app",
+  "version": "1.0.0",
+  "description": "hrmanagement",
+  "homepage": "https://github.com/Bvyshnavi2026/SAMPLE_MERN_APP1#readme",
+  "bugs": {
+    "url": "https://github.com/Bvyshnavi2026/SAMPLE_MERN_APP1/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bvyshnavi2026/SAMPLE_MERN_APP1.git"
+  },
+  "license": "ISC",
+  "author": "vyshnavi",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongodb": "^7.6.0"
+  }
+}
