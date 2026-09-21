@@ -1,8 +1,11 @@
 let express=require('express');
 let router=express.Router();
-router.get("/viewemployee",(req,res)=>{
-    res.send("view employee route");
+let {users} =require('../models/users');
+router.get("/viewemployee",async(req,res)=>{
+    let result=await users.find()
+    res.send(result);
 });
+//  open whether postman or chrome for viewemployee
 router.post("/assign-task",(req,res)=>{
     res.send("assign task route");
 });
