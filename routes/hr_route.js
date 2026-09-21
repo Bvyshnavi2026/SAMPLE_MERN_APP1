@@ -9,11 +9,21 @@ router.get("/viewemployee",async(req,res)=>{
 router.post("/assign-task",(req,res)=>{
     res.send("assign task route");
 });
+
 router.get("/viewtasks",(req,res)=>{
     res.send("view tasks route");
 });
-router.delete("/deleteEmp",(req,res)=>{
-    res.send("delete Emp route");
-})
+
+router.delete("/deleteEmp/:id",async(req,res)=>{
+    let result=await users.findByIdAndDelete(req.params.id)
+    if(result){
+        res.send("employee deleted success");
+    }else{
+        res.send("no user found");
+
+    }
+});
+// where "id" is created because to delete we need id
+// localhost:3000/api/hr/deleteEmp/idweshould give
 module.exports=router;
 //  were router is going to run or export all get,post,delete
