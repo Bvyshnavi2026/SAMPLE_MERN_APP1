@@ -1,13 +1,18 @@
 let express=require('express');
 let router=express.Router();
 let {users} =require('../models/users');
+let {tasks}=require('../models/tasks')
 router.get("/viewemployee",async(req,res)=>{
     let result=await users.find()
     res.send(result);
 });
 //  open whether postman or chrome for viewemployee
-router.post("/assign-task",(req,res)=>{
-    res.send("assign task route");
+router.post("/assign-task",async(req,res)=>{
+    let data=req.body;
+    //  collecting input 
+    let newTasK=new tasks(data);
+    let result=await newTasK.save();
+    res.send(result)
 });
 
 router.get("/viewtasks",(req,res)=>{
