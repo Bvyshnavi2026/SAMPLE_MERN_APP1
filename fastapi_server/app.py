@@ -1,11 +1,20 @@
 from fastapi import FastAPI
-from models import Student,Staff
 # calling the models fields
-from database import student_collection,staff_collection
+
+from routes.student import student_router
+# where folder name file name and route name
+from routes.staff import staff_router
+#  5,7 lines is for importing routes to app.py file
 #  calling the tables 
 # where app is varaiable
 app=FastAPI()
 # localhost:8000/getStudents
+app.include_router(student_router)
+app.include_router(staff_router)
+# here we including the routers
+
+
+
 def student_details(Student):
     return{
         "id":str(Student["_id"]),
