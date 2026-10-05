@@ -39,3 +39,8 @@ def updatestudent(stuid:str,stu:Student):
        {"$set":stu.model_dump()}
     )
     return "student updated success"
+
+
+
+
+

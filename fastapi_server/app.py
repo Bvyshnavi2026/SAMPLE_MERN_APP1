@@ -11,3 +11,5 @@ app=FastAPI()
 app.include_router(student_router)
 app.include_router(staff_router)
 # here we including the routers
+
+

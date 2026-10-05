@@ -11,3 +11,12 @@ def getStaffs():
 @staff_router.get("/addStaff")
 def addStaffs():
     return "add staff method called"
+
+
+
+
+
+
+
+
+
