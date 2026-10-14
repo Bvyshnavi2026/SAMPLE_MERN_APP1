@@ -3,10 +3,10 @@ import './Header.css'
 function Header(){
     return(
       <div className="header">
-      <Link href="/">Home</Link>
-      <Link href="/about">About</Link>
-      <Link href="/contact">Contact</Link>
-      <Link href="/service">Service</Link>
+      <Link to="/">Home</Link>
+      <Link to="/about">About</Link>
+      <Link to="/contact">Contact</Link>
+      <Link to="/service">Service</Link>
       </div>
     )
 
