@@ -10,6 +10,9 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Services from './pages/Services'
 import {Routes,Route} from 'react-router-dom'
+import AdminLogin from './pages/AdminLogin'
+import AdminHome from './pages/AdminHome'
+
 
 function App() {
   return ( 
@@ -19,6 +22,9 @@ function App() {
       <Route path="/" element={<Home></Home>}></Route>
       <Route path="/about" element={<About></About>}></Route>
       <Route path="/contact" element={<Contact></Contact>}></Route>
+      <Route path="/services" elememt={<Services></Services>}></Route>
+      <Route path="/Adminlogin" element={<AdminLogin></AdminLogin>}></Route>
+      <Route path="/AdminHome" element={<AdminHome></AdminHome>}></Route>
     </Routes>
     <Footer/>
     </div>
