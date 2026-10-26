@@ -12,7 +12,8 @@ import Services from './pages/Services'
 import {Routes,Route} from 'react-router-dom'
 import AdminLogin from './pages/AdminLogin'
 import AdminHome from './pages/AdminHome'
-
+import Register from './pages/Register'
+import Login from './pages/login'
 
 function App() {
   return ( 
@@ -25,6 +26,8 @@ function App() {
       <Route path="/services" elememt={<Services></Services>}></Route>
       <Route path="/Adminlogin" element={<AdminLogin></AdminLogin>}></Route>
       <Route path="/AdminHome" element={<AdminHome></AdminHome>}></Route>
+      <Route path="/Register" element={<Register></Register>}></Route>
+      <Route path="/Login" element={<Login></Login>}></Route>
     </Routes>
     <Footer/>
     </div>

@@ -30,6 +30,7 @@ router.post("/register",async(req,res)=>{
     let result= await newuser.save();
     res.send(result);
 });
+
 router.put("/updatestatus",(req,res)=>{
     res.send("update status  route");
 });

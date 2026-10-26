@@ -23,7 +23,7 @@ function AdminLogin(){
                 <input type="password"value={password} onChange={(e)=>setPassword(e.target.value)} placeholder="Enter password"></input><br/>
                 <button type="submit">Admin Login</button>
             </form>
-            {error && <div className="alert alert-danger"></div>}
+            {error && <div className="alert alert-danger">{error}</div>}
             
         </div>
         // where alert alert is bootstrap attribute
