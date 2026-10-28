@@ -12,12 +12,19 @@ router.post("/login",async(req,res)=>{
         {
         let matchpass=await bcrypt.compare(req.body.password,result.password);
         if(matchpass){
-            res.send("Login Successfull");
+            res.send({"msg":"Login Success",
+                "users":{
+                    _id:result._id,
+                    name:result.name,
+                    email:result.email,
+                    role:result.role
+                }
+            });
         }else{
-            res.send("Login failed");
+            res.send({"msg":"Login Failed"});
         }
     }else{
-            res.send("user not found");
+            res.send({"msg":"user not found"});
         }
 });
 
