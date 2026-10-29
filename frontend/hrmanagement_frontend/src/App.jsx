@@ -14,8 +14,8 @@ import AdminLogin from './pages/AdminLogin'
 import AdminHome from './pages/AdminHome'
 import Register from './pages/Register'
 import Login from './pages/login'
-import hrhome from './pages/HrHome'
-import emphome from './pages/EmpHome'
+import HrHome from './pages/HrHome'
+import EmpHome from './pages/EmpHome'
 
 function App() {
   return ( 
@@ -30,8 +30,8 @@ function App() {
       <Route path="/AdminHome" element={<AdminHome></AdminHome>}></Route>
       <Route path="/Register" element={<Register></Register>}></Route>
       <Route path="/Login" element={<Login></Login>}></Route>
-      <Route path="/hrhome" element={<hrhome></hrhome>}></Route>
-      <Route path="/emphome" element={<emphome></emphome>}></Route>
+      <Route path="/HrHome" element={<HrHome></HrHome>}></Route>
+      <Route path="/EmpHome" element={<EmpHome></EmpHome>}></Route>
     </Routes>
     <Footer/>
     </div>

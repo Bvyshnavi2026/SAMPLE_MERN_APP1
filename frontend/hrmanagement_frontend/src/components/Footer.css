@@ -1,0 +1,132 @@
+/* Footer container */
+.custom-footer {
+  background: linear-gradient(135deg, #101828, #263b70, #4f46e5);
+  color: #ffffff;
+  width: 100%;
+  margin-top: auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Brand */
+.footer-brand {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  transition: color 0.3s ease;
+}
+
+.footer-brand span {
+  color: #a5b4fc;
+}
+
+.footer-brand:hover {
+  color: #c7d2fe;
+}
+
+.footer-description {
+  color: #cbd5e1;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Quick links */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 20px;
+}
+
+.footer-links a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #a5b4fc;
+}
+
+/* Social icons */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+  background: #ffffff;
+  color: #4338ca;
+  transform: translateY(-4px);
+}
+
+/* Divider */
+.footer-divider {
+  border-color: rgba(255, 255, 255, 0.25);
+  margin: 25px 0 18px;
+}
+
+/* Bottom section */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #cbd5e1;
+  font-size: 13px;
+}
+
+.footer-bottom strong {
+  color: #ffffff;
+}
+
+.footer-made i {
+  color: #fda4af;
+  margin: 0 3px;
+}
+
+/* Responsive mobile layout */
+@media (max-width: 767.98px) {
+  .footer-links {
+    gap: 12px 18px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 360px) {
+  .footer-brand {
+    font-size: 22px;
+  }
+
+  .footer-links {
+    gap: 10px 14px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
