@@ -30,7 +30,7 @@ function Login() {
     setLoading(true);
 
     try {
-      const req = await fetch("http://localhost:3000/api/emp/login", {
+      const req = await fetch("http://https://sample-mern-app1.onrender.com/api/emp/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

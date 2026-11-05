@@ -19,8 +19,8 @@ app.use(express.json());
 // used for collecting input from json data 
 app.use("/api/hr",hrroutes);
 app.use("/api/emp",emproutes);
-// localhost:3000/api/hr/viewtasks
-// localhost:3000/api/hr/viewemployees
+// https://sample-mern-app1.onrender.com/api/hr/viewtasks
+// https://sample-mern-app1.onrender.com/api/hr/viewemployees
 // run the server     
 app.listen(3000,()=>{
     console.log("server listening on port 3000")

@@ -29,6 +29,6 @@ router.delete("/deleteEmp/:id",async(req,res)=>{
     }
 });
 // where "id" is created because to delete we need id
-// localhost:3000/api/hr/deleteEmp/idweshould give
+// https://sample-mern-app1.onrender.com/api/hr/deleteEmp/idweshould give
 module.exports=router;
 //  were router is going to run or export all get,post,delete

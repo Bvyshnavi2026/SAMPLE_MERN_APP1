@@ -21,7 +21,7 @@ function Register() {
     setLoading(true);
 
     try {
-      const req = await fetch("http://localhost:3000/api/emp/register", {
+      const req = await fetch("https://sample-mern-app1.onrender.com/api/emp/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
