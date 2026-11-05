@@ -9,7 +9,7 @@ app.use(cors())
 // here anyone anybody can access(app.use(cors()))
 
 
-mongoose.connect("mongodb://127.0.0.1:27017/hrmanagement")
+mongoose.connect("mongodb+srv://bachireddyvyshnavi_db_user:4dHRprd6wAriIPPX@cluster0.bamdlob.mongodb.net//hrmanagement")
 .then(()=>{
     console.log("connected with mongodb database")
 }).catch((err)=>{
