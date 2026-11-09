@@ -8,8 +8,10 @@ let mongoose=require('mongoose');
 app.use(cors())
 // here anyone anybody can access(app.use(cors()))
 
+let port=process.env.PORT || 3000;
 
-mongoose.connect("mongodb+srv://bachireddyvyshnavi_db_user:4dHRprd6wAriIPPX@cluster0.bamdlob.mongodb.net//hrmanagement")
+
+mongoose.connect(process.env.mongo_url)
 .then(()=>{
     console.log("connected with mongodb database")
 }).catch((err)=>{
@@ -22,6 +24,6 @@ app.use("/api/emp",emproutes);
 // https://sample-mern-app1.onrender.com/api/hr/viewtasks
 // https://sample-mern-app1.onrender.com/api/hr/viewemployees
 // run the server     
-app.listen(3000,()=>{
+app.listen(port,"0.0.0.0",()=>{
     console.log("server listening on port 3000")
 })
