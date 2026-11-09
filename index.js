@@ -7,11 +7,11 @@ let mongoose=require('mongoose');
 
 app.use(cors())
 // here anyone anybody can access(app.use(cors()))
-
+// mongodb+srv://bachireddyvyshnavi_db_user:4dHRprd6wAriIPPX@cluster0.bamdlob.mongodb.net/hrmanagement
 let port=process.env.PORT || 3000;
 
 
-mongoose.connect(process.env.mongo_url)
+mongoose.connect(process.env.monogo_url)
 .then(()=>{
     console.log("connected with mongodb database")
 }).catch((err)=>{
